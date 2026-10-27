@@ -280,10 +280,10 @@ class RandomSizedBBoxSafeCrop(BBoxSafeRandomCrop):
         >>> transform_basic = A.Compose([
         ...     A.RandomSizedBBoxSafeCrop(height=224, width=224, p=1.0),
         ... ], bbox_params=A.BboxParams(
-        ...     format='pascal_voc',
+        ...     coord_format='pascal_voc',
         ...     label_fields=['bbox_labels']
         ... ), keypoint_params=A.KeypointParams(
-        ...     format='xy',
+        ...     coord_format='xy',
         ...     label_fields=['keypoint_labels']
         ... ))
         >>>
@@ -316,11 +316,11 @@ class RandomSizedBBoxSafeCrop(BBoxSafeRandomCrop):
         ...         p=1.0
         ...     ),
         ... ], bbox_params=A.BboxParams(
-        ...     format='pascal_voc',
+        ...     coord_format='pascal_voc',
         ...     label_fields=['bbox_labels'],
         ...     min_visibility=0.3  # Only keep bboxes with at least 30% visibility
         ... ), keypoint_params=A.KeypointParams(
-        ...     format='xy',
+        ...     coord_format='xy',
         ...     label_fields=['keypoint_labels'],
         ...     remove_invisible=True  # Remove keypoints outside the crop
         ... ))

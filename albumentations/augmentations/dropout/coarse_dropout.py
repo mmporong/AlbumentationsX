@@ -446,7 +446,7 @@ class ConstrainedCoarseDropout(BaseDropout):
         ...         fill=127,                      # Fill holes with gray
         ...     )
         ... ], bbox_params=A.BboxParams(
-        ...     format='pascal_voc',  # [x_min, y_min, x_max, y_max]
+        ...     coord_format='pascal_voc',  # [x_min, y_min, x_max, y_max]
         ...     label_fields=['labels']  # Specify field containing labels
         ... ))
         >>> # Apply to image and its bounding boxes

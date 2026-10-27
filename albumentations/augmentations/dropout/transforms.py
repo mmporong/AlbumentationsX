@@ -159,7 +159,7 @@ class BaseDropout(DualTransform):
         ...         fill_mask=1,                  # Fill mask holes with 1
         ...         p=1.0                         # Always apply for this example
         ...     )
-        ... ], bbox_params=A.BboxParams(format='yolo', min_visibility=0.3))
+        ... ], bbox_params=A.BboxParams(coord_format='yolo', min_visibility=0.3))
         >>>
         >>> # Apply the transform
         >>> transformed = transform(image=image, mask=mask, bboxes=bboxes)

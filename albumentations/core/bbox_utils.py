@@ -314,7 +314,7 @@ class BboxProcessor(DataProcessor[BboxParams]):
         >>> import albumentations as A
         >>> # Process COCO format bboxes with class labels
         >>> params = A.BboxParams(
-        ...     format='coco',
+        ...     coord_format='coco',
         ...     label_fields=['class_labels'],
         ...     min_area=1024,
         ...     min_visibility=0.1

@@ -116,10 +116,10 @@ class CropNonEmptyMaskIfExists(BaseCrop):
         ...         p=1.0
         ...     ),
         ... ], bbox_params=A.BboxParams(
-        ...     format='pascal_voc',
+        ...     coord_format='pascal_voc',
         ...     label_fields=['bbox_labels']
         ... ), keypoint_params=A.KeypointParams(
-        ...     format='xy',
+        ...     coord_format='xy',
         ...     label_fields=['keypoint_labels']
         ... ))
         >>>

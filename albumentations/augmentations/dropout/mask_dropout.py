@@ -87,13 +87,13 @@ class MaskDropout(DualTransform):
         ...         ),
         ...     ],
         ...     bbox_params=A.BboxParams(
-        ...         format='pascal_voc',
+        ...         coord_format='pascal_voc',
         ...         label_fields=['bbox_labels'],
         ...         min_area=1,
         ...         min_visibility=0.1
         ...     ),
         ...     keypoint_params=A.KeypointParams(
-        ...         format='xy',
+        ...         coord_format='xy',
         ...         label_fields=['keypoint_labels'],
         ...         remove_invisible=True
         ...     )
